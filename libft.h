@@ -74,4 +74,6 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 void				*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
+int					ft_is_numeric_str(const char *str);
+
 #endif
