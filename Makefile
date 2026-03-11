@@ -15,7 +15,7 @@ NC			= \033[0m # No Color
 # Compilation Variables
 NAME = libft.a
 CC = cc
-CFLAGS = -Wextra -Wall -Werror
+CFLAGS = -Wextra -Wall -Werror -g
 SRC = $(MANDATORY)
 OBJ = $(SRC:.c=.o)
 
@@ -50,7 +50,8 @@ MANDATORY = \
 	ft_lstiter.c \
 	ft_lstmap.c \
 	ft_realloc.c \
-	ft_is_numeric_str.c
+	ft_is_numeric_str.c \
+	get_next_line.c
 
 
 ###	Rules	#################################

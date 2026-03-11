@@ -12,6 +12,9 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 # include <ctype.h>
 # include <limits.h>
@@ -19,6 +22,9 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <fcntl.h>
+# include <stddef.h>
+
 
 typedef struct s_list
 {
@@ -75,5 +81,7 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 void				*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
 int					ft_is_numeric_str(const char *str);
+
+char	*get_next_line(int fd);
 
 #endif
